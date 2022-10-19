@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Store | Sản Phẩm</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3143/3143643.png" type="image/x-icon">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/sanpham.css">
+</head>
+
+<body>
+    <!-- thanh đầu -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="navbar">
+        <div class="container">
+            <!-- các chữ trong thanh đầu -->
+            <a href="#" class="navbar-brand">
+                <!-- logo -->
+                <img src="ảnh/logo1.png" height="50" i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sanpham.html">sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./lienhe.html">liên hệ</a>
+                    </li>
+                </ul>
+                <!-- icons -->
+                <a href="#" data-bs-toggle="modal" data-bs-target="#search-modal"
+                    class="btn btn-brand ms-lg-3 navbar-button" id="search-btn">
+                    <i class='fas fa-search'></i></a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#cart-modal"
+                    class="btn btn-brand ms-lg-3 navbar-button" id="cart-btn">
+                    <i class='fas fa-shopping-cart'></i></a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#login-modal"
+                    class="btn btn-brand ms-lg-3 navbar-button" id="login-btn">
+                    <i class='fas fa-user'></i></a>
+            </div>
+
+        </div>
+    </nav>
+    <!-- sản phẩm -->
+    <section id="products">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-lg-5 m-auto text-center">
+                    <h1>sản phẩm</h1>
+                    
+                </div>
+            </div>
+            <div id="list-item" class="row">
+
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0 product-card">
+                        <div class="card-image">
+                            <img class="card img-fluid product-img" src="./ảnh/dép balenciaga 1.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép balenciaga (Trắng)</b></h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted price">99.000 VNĐ/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign subProduct"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">1</span>
+                                    <button class="border rounded sign addProduct"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép balenciaga2.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép balenciaga (đen)</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted">99.000 VNĐ/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                        id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép1.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép bánh mì trắng lót xanh</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted">69.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép2.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép bánh mì đen lót xanh</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted">69.000 VNĐ/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép3.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép bánh mì trắng lót đen</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted">69.000 VNĐ/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép bông ếch xanh (1).jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép ếch hồng</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted"><del>119.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép bông ếch xanh (2).jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép ếch xanh</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted">119.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép jordan(1).jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép jordan xanh</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted">99.000 VNĐ/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép jordan (2).jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép jordan xám</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted">99.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép jordan (3).jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép jordan đen</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted">99.000 VNĐ/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép mặt hổ 1.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép mặt hổ đen</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted">99.000 VNĐ/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép jordan.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép jordan hồng</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted"><del>99.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép mặt hổ 2.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép mặt hổ trắng</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted"><del>99.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép nike 1.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép nike vàng</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted"><del>69.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép nike 2.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép nike đỏ</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted"><del>69.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép nike 3.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép nike trắng</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted"><del>69.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép nike 4.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép nike xanh</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted"><del>69.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép quai ngang chữ x (1).jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép chữ x đen</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted"><del>59.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép quai ngang chữ x (2).jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép chữ x trắng</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted"><del>59.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép quai ngang chữ x (3).jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép chữ x trắng xám</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted"><del>59.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép quai ngang dion (1).jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép dion vàng</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted"><del>99.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép quai ngang dion (2).jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép dion trắng</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted"><del>99.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép quai ngang dion (3).jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép dion đen</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted"><del>99.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép unisix 2 quai hàn quốc (1).jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép 2 quai trắng</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted"><del>159.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép unisix 2 quai hàn quốc (2).jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép 2 quai đen</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted"><del>159.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép unisix KAWS x SUSAME (1).jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép kaws x susame trắng</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted"><del>129.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/dép unisix KAWS x SUSAME (2).jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>Dép kaws x susame đen</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted"><del>129.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/sục ny 1.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>sục ny trắng</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted"><del>129.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/sục ny 2.jpg">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>sục ny đen</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted"><del>129.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>sản phẩm sắp ra mắt</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted"><del>***.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>sản phẩm sắp ra mắt</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted"><del>***.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                    <div class="card border-0">
+                        <div class="card-image">
+                            <img class="card img-fluid" src="./ảnh/">
+                        </div>
+                        <div class="card-body">
+                            <h5><b>sản phẩm sắp ra mắt</b> </h5>
+                            <div class="d-flex flex-row my-2 product-price">
+                                <div class="text-muted"><del>***.000 VND/1đôi</div>
+                                <div class="ml-auto">
+                                    <button class="border rounded sign"><span class="fa fa-minus"
+                                            id="orange"></span></button>
+                                    <span class="px-sm-1">0</span>
+                                    <button class="border rounded sign"><span class="fa fa-plus"
+                                            id="orange"></span></button>
+                                </div>
+                            </div>
+                            <div class="product-btn">
+                                <button class="btn rounded my-2">Thêm vào giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer - chân trang -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer-about">
+                        <h6>Trụ Sở Chính</h6>
+                        <ul>
+                            <li>Địa chỉ: Thổ Tang-Vĩnh Tường-Vĩnh Phúc</li>
+                            <li>Mr.DƯƠNG: 0986.347.938</li>
+                            <li>Email: HighStore@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mx-auto">
+                    <div class="footer-widget">
+                        <h6>Liên Hệ & Hợp Tác</h6>
+                        <ul>
+                            <li><a class="fa-brands fa-square-facebook" href="https://www.facebook.com/DuongHigh/">  facebook</a></li>
+                            <li><a class="fa-brands fa-tiktok" href="https://www.tiktok.com/@duonghigh?_t=8WW3wcsQbly&_r=1&fbclid=IwAR0dlQo35v_J1x3Fk3mzdVVPAYx_2jIFP-2_Vgc-G4_aRUOIU5nRU2daJPk"> tiktok</a></li>
+                            <li><a class="fa-brands fa-instagram" href="https://www.instagram.com/duong_high/"> Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer-widget">
+                        <h6>CSKH</h6>
+                        <p>HighStore luôn lắng nghe mọi phản hồi và đánh giá của quý khách hàng!
+                        </p>
+                        <form action="https://www.messenger.com/t/100006549349284/">
+                            <input type="text" placeholder="comment...">
+                            <button type="submit" class="site-btn">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- pop-up modal -->
+    <div class="modal fade" id="search-modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content search-form">
+                <div class="modal-body search-body">
+                    <div class="container-fluid">
+                        <input type="search" placeholder="Tìm kiếm ...">
+                        <label for="search-box" class="fas fa-search"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cart -giỏ hàng -->
+    <!-- tabindex : càng lớn càng ở đầu -->
+    <div class="modal fade" id="cart-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content cart-form">
+                <div class="modal-body cart-body">
+                    <div class="shopping-cart">
+                        <div class="box">
+                            <i class="fas fa-trash"></i>
+                            <img src="./ảnh/giò bò (2).jpg" alt="">
+                            <div class="content">
+                                <h3>dép bánh mì</h3>
+                                <span class="price">69.000 VND</span>
+                                <span class="quantity">số lượng : 1</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <i class="fas fa-trash"></i>
+                            <img src="./ảnh/chả lợn (2).jpg" alt="">
+                            <div class="content">
+                                <h3>$$$</h3>
+                                <span class="price">99.000 VND</span>
+                                <span class="quantity">số lượng : 1</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <i class="fas fa-trash"></i>
+                            <img src="./ảnh/chả lợn (2).jpg" alt="">
+                            <div class="content">
+                                <h3>$$$</h3>
+                                <span class="price">119.000 VND</span>
+                                <span class="quantity">số lượng : 1</span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <i class="fas fa-trash"></i>
+                            <img src="./ảnh/giò lợn.jpg" alt="">
+                            <div class="content">
+                                <h3>$$$</h3>
+                                <span class="price">119.000 VND</span>
+                                <span class="quantity">số lượng : 1</span>
+                            </div>
+                        </div>
+                        <div class="total"> tổng :  </div>
+                        <a href="#" class="btn-modal mx-auto">Thanh Toán</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login -->
+    <div class="modal fade" id="login-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content login-form">
+                <div class="modal-body login-body">
+                    <div class="login-form">
+                        <h3>ĐĂNG NHẬP</h3>
+                        <input type="email" placeholder="Email của bạn" class="box">
+                        <input type="password" placeholder="Mật khẩu" class="box">
+                        <p>Quên mật khẩu <a href="#">Nhấn vào đây</a></p>
+                        <p>Chưa có tài khoản ? <a href="login/Dangky.html">Đăng ký</a></p>
+                        <input type="submit" value="Đăng Nhập" class="btn-modal">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/cart.js"></script>
+
+
+</body>
+
+</html>

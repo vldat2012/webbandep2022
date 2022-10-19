@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="validateForm.css">
+    <script type="text/javascript" src="validateForm.js"></script>
+    <title>Đăng ký tài khoản</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h2>Đăng ký tài khoản</h2>
+        </div>
+        <form class="form" action="" method="POST">
+            <div class="information">
+                <label>Họ và tên:</label><br>
+                <input type="text"  name="fullname" id="fullname" value=""><br>
+                <span id="errorFullName" class="error"></span>
+                <span id="doneFullName" class="success"></span>
+            </div>    
+            <div class="information">
+                <label>Tên đăng nhập: </label><br>
+                <input type="text" name="username" id="username"  value=""><br>
+                <span id="errorUsername" class="error"></span>
+                <span id="doneUsername" class="success"></span>
+            </div>
+            <div class="information">
+                <label>Mật Khẩu: </label><br>
+                <input type="tel" name="Phone_number" id="Phone_number"  value=""><br>
+                <span id="errorPhone" class="error"></span>
+                <span id="donePhone" class="success"></span>
+            </div>
+            <div class="information">
+                <label>Nhập lại mật khẩu:</label><br>
+                <input type="password"  name="password" id="password" value=""><br>
+                <span id="errorPass" class="error"></span>
+                <span id="donePass" class="success"></span>
+            </div>
+            <div class="information">
+                <label>SĐT:</label><br>
+                <input type="password" name="confirmPass" id="confirmPass"  value=""><br>
+                <span id="errorRePass" class="error"></span>
+                <span id="doneRePass" class="success"></span>
+            </div>
+            <div class="form-group">
+                <label for="gender">Giới tính nam</label>
+                <div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" name="gender" id="male" value="male" class="form-check-input" checked>
+                        <label for="male" class="form-check-label">Nam</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Giới tính nữ</label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="gender" id="female" value="female" class="form-check-input">
+                                <label for="female" class="form-check-label">Nữ</label>
+                            </div>
+            </div>
+            <button onclick="checkInfor(); return false">Đăng ký</button>
+        </form>
+        
+    </div>
+    
+    
+</body>
+</html>

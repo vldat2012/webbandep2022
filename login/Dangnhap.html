@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="validateForm.css">
+    <script type="text/javascript" src="validateFormLogin.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h2>Đăng nhập</h2>
+        </div>
+        <form class="form">   
+            <div class="information">
+                <label>Tên đăng nhâp:</label><br>
+                <input type="text" name="username" id="username" placeholder="Tên đăng nhập/Email/SĐT" value=""><br>
+                <span id="errorUsername" class="error"></span>
+                <span id="doneUsername" class="success"></span>
+            </div>
+            <div class="information">
+                <label>Mật khẩu:</label><br>
+                <input type="password" name="pass" id="password"  placeholder="Nhập mật khẩu"><br>
+                <span id="errorPass" class="error"></span>
+                <span id="donePass" class="success"></span>
+            </div>
+            <button onclick="checkInforLogin();return false">Đăng nhập</button>
+            <div>
+                <h5>Quên mật khẩu</h5>
+                <p class="exception">
+                    <span class="exp">hoặc</span>
+                </p>
+            </div>
+            <div>
+                <p style="text-align: center;">Chưa có tài khoản?<a href="validateForm.html" style="cursor: pointer;color: #ffa600;"> Đăng ký ngay</a></p>
+                
+            </div>
+        </form>
+        
+    </div>
+    
+    
+</body>
+</html>
